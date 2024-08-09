@@ -8,20 +8,18 @@ body{
 /* ------------ home section style------------ */
 .home {
     width: 80%;
-    margin: 0 auto; 
+    margin:  auto; 
 }
 
 .navbar {
-    margin-top: 4%;
     display: flex;
-    justify-content: center; 
+    justify-content: space-around; 
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px; 
+    gap: 30px; 
 }
-
-.logo {
-    text-align: center; 
+.logo{
+    padding-right: 100px;
 }
 
 .menu {
@@ -43,6 +41,7 @@ body{
 }
 .menu ul li a{
     text-decoration: none;
+    color: #fff;
 }
 
 
@@ -83,6 +82,7 @@ body{
     margin-top: -40px;
     font-size: 60px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
 }   
 .banner img{
     width: 350px;
@@ -223,28 +223,88 @@ body{
 }
 /*---------- Achivement setion ----------- */
 .achivement{
-    width: 80%;
+    width: 90%;
     height: 500px;
-    background-color: red;
-    margin-left: 120px;
+    margin-left: 50px;
  
 }
 .ace-img{
     width: 450px;
-    height: 300px;
-    background-color: aqua;
+    height: auto;
+  
 }
 .ace-text{
-    width: 450px;
-    height: 300px;
-    background-color: aqua;
+    width: 520px;
+    height: auto;
+    text-align: start;
+   
 }
 .achiv{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .ace-text h1{
     font-size: 35px;
 
+}
+/* ------- Achivement statas style------- */
+.stat-items{
+    display: flex;
+    gap: 40px;
+}
+
+.stat-item {
+    color: white; 
+}
+
+.stat-number {
+    font-size:45px;
+    font-weight: bold;
+    color: #ffffff;
+   
+}
+
+.stat-label {
+    font-size: 25px; 
+    margin-top: 5px;
+    color: rgb(255, 255, 255); 
+    
+}
+.btn3{
+    padding: 15px 10px;
+    border: 1px solid white;
+    width: 110px;
+    border-radius: 6px;
+    margin-top: 50px;
+    opacity: 0.6;
+    text-align: center;
+}
+.btn3 a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+/* ------------------------------ */
+
+.gallery {
+    padding: 20px 0;
+}
+
+.gallery h2 {
+    text-align: center;
+    color: #43e97b;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-images img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
 }
