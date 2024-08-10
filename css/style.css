@@ -16,11 +16,10 @@ body{
     justify-content: space-around; 
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px; 
+    gap: 10px; 
+    margin-left: 0;
 }
-.logo{
-    padding-right: 100px;
-}
+
 
 .menu {
  
@@ -36,7 +35,7 @@ body{
 
 .menu ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 30px;
     font-size: 20px;
 }
 .menu ul li a{
@@ -47,7 +46,7 @@ body{
 
 .btn {
     flex: 1; 
-    text-align: center; /
+    text-align: center; 
 }
 
 .btn a {
@@ -56,9 +55,11 @@ body{
     text-decoration: none;
     color: rgb(255, 255, 255);
     border-radius: 4px;
-    background-color: rgb(0, 123, 255); 
 }
-
+.btn a:hover{
+   background-color:rgb(23, 226, 23);
+   border: 2px solid rgb(255, 255, 255);
+}
 
 /* ----------- Banner Section style ----------- */
 .Banner_Sec{
@@ -97,13 +98,20 @@ body{
     font-weight: bold;  
     border-radius:5px;
     margin-top: -130px;
+    cursor:pointer ;
 
 }
 .btn1 a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.801);
 
-}   
+}  
+.btn1:hover{
+    background-color:rgb(23, 226, 23);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px 6%;
+ }
+ 
 .item{
     width: 230px;
     height: 200px;
@@ -114,7 +122,28 @@ body{
     opacity: 0.7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    text-align: center;
 } 
+.item:hover{
+    border: 3px solid rgb(255, 255, 255);
+    color:rgb(255, 37, 88) ;
+    opacity: 3;
+}
+.hover h1,p{
+    text-align: center;
+    float: left;
+}
+.hover{
+    width: 230px;
+    height: 200px;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+.hover:hover{
+    color:rgb(255, 251, 252) ;
+    opacity: 3;
+    
+}
 .item1{
     width: 230px;
     height: 200px;
@@ -125,7 +154,14 @@ body{
     opacity: 0.7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.7s ease;
+    text-align: center;
 } 
+.item1:hover{
+    border: 3px solid rgb(255, 255, 255);
+    color:rgb(44, 0, 241) ;
+    opacity: 3;
+}
+
 .item2{
     width: 230px;
     height: 200px;
@@ -136,7 +172,14 @@ body{
     opacity: 0.7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    text-align: center;
 } 
+.item2:hover{
+    border: 3px solid rgb(255, 255, 255);
+    opacity: 3;
+    color: rgb(255, 0, 255);
+}
+
 .item3{
     width: 230px;
     height: 200px;
@@ -148,6 +191,12 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 } 
+.item3:hover{
+    border: 3px solid rgb(255, 255, 255);
+    color:rgb(255, 119, 8)  ;
+    opacity: 3;
+}
+
 .item:last-child{
     width: 240px;
 } 
@@ -194,21 +243,28 @@ body{
     border-radius: 6px;
     margin-top: 10px;
     opacity: 0.6;
-}
-.tech{
-    width: 17%;
+    cursor: pointer;
 }
 .btn2 a{
     text-decoration: none;
     color: white;
-    cursor: pointer;
 }
+.btn2:hover{
+    background-color:rgb(23, 226, 23);
+    border: 2px solid rgb(255, 255, 255);
+    opacity:1 ;
+
+ }
+ 
 .experience{
     width: 80%;
     background-color:  rgb(48, 45, 67);
     padding: 10px 10px;
     border-radius: 15px;
     opacity: 0.7;
+}
+.tech{
+    width: 17%;
 }
 .tec{
     display: flex;
@@ -279,15 +335,31 @@ body{
     margin-top: 50px;
     opacity: 0.6;
     text-align: center;
+    cursor: pointer;
+
 }
 .btn3 a{
     text-decoration: none;
     color: white;
-    cursor: pointer;
 }
+.btn3:hover{
+    background-color:rgb(23, 226, 23);
+    border: 2px solid rgb(255, 255, 255);
+    opacity: 1;
+ }
+ 
+/* ----- videos section------ */
+.video {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/360_F_467930172_RdGhBPu1EB1ksit2xKJDcMxZP8jmGrLq.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 /* ------------------------------ */
 
-.gallery {
+/* .gallery {
     padding: 20px 0;
 }
 
@@ -307,4 +379,4 @@ body{
     height: 350px;
     object-fit: cover;
     border-radius: 8px;
-}
+} */
